@@ -264,6 +264,7 @@ app.get('/endgame',function(req,res){
    
 })
 
-app.listen(3000,function(){
+const port = process.env.PORT||3000;
+app.listen(port,function(){
     console.log("server has started successfully");
   });
