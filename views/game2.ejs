@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/game2.css">
+    <a href="https://icons8.com/icon/VJyWfJ0h97DB/arrow"></a>
+    <title>Document</title>
+</head>
+<body>
+  <audio src="./audio/game1.mp3" id="my_audio" loop="loop"  autoplay="true"
+  ></audio>
+  <div class="start" id="start">
+    <h1>The next game will be the test of your memory and observation power</h1>
+    <h1>For each question you will have only one attempt</h1>
+    <h1>Click anywhere to start the game</h1>
+</div>
+<div class="main" style="visibility:hidden;" id="main">
+  <div class="navbar">
+       
+    <div class="name"><%=email%></div>
+    <div class="highest">Highest score  <%=score%></div>
+    <div class="current">Current Score 1</div>
+ 
+</div>
+<div>
+  <h3 class="ins">Please observe all the daigrams and animations carefully, and follow the steps as specifeid and then proceed by clicking the arrow </h3>
+</div>
+    <div class="cards-list">
+  
+        <div class="card 1">
+          <!-- <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div> -->
+          <!-- <div class="card_image"> <iframe height="100%" width="100%" src="https://www.youtube.com/embed/i06ifyygFsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+          <div class="card_image">
+          <img src="https://media.giphy.com/media/SJXKbJAoo3HXhjdV74/giphy.gif" />
+        </div>
+          <!-- <div class="card_title title-white">
+            <p>Card Title</p>
+          </div> -->
+        </div>
+        
+          <div class="card 2">
+          <div class="card_image">
+            <img src="./assets/car.jpg" />
+            </div>
+          <div class="card_title title-white">
+            <p>Card Title</p>
+          </div>
+        </div>
+        
+        <div class="card 3 c3" id="card3">
+        
+          <div>
+            <h2>Click!</h2>
+          </div>
+        </div>
+          
+          <div class="card 4 " id="card4">
+        
+            <div class="card_image">
+          
+           
+                <img src="https://media.giphy.com/media/PqjTdvXImZQfcmTYEO/giphy.gif" id="rocket" />
+      
+                </div>
+          <div class="card_title title-black">
+           
+          </div>
+          </div>
+        
+        </div>
+        <div class="instructions">
+              <div class="step1">
+                
+                   <h2> Identify </h2>
+               
+                  
+                    
+               
+                </div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhElEQVR4nO3cwWrCQBSF4bxgp1po38UqpQqVQmgfRohx4xN1cxe6Vly4bptzQrjM/0O2MnyMSXBmbBoiIiIiokSVRfc59RhSV167y3x1+Jp6HKkBXzbH8+Nyv516LGkBt7ufG+Jptuy/px5PSsC2DxBVQBANgCAaAEE0AIJoAATRAAiiARBEAyCIBkAQDYAgGgBBNACCaAAE0QAIYqMDVo9YDIBVIxYToA3xNqBsV2sCvCM+r4+nwQtV7gG1CS9pJgIYGiKAoc1EAEP7OgMY2j0RwNAeLACG9nQGMLRXHABDe08EMP4M+PR2+ACwN+IxA0PDAzA0PABDwwMwNDwAQ8MDMDQ8AEPDuwNmu9oRftKfrfb/x8tYGWFRadDMy1oxL2tWhedeWK8Oz7m1o0o81+aiavEc29uqxlM3WFaPp2zxBU/YZA6ecMwBPOGgDXjCUS/whMOG4AnHXcEbAAieAAieAAieAAieAAieCMhfP4mA1SwAjdHDonsf5YOJiIiIiJrfuwLJIUY92L6AhgAAAABJRU5ErkJggg==">
+              <div class="step1">
+                <h2> Observe</h2>
+              
+              </div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhElEQVR4nO3cwWrCQBSF4bxgp1po38UqpQqVQmgfRohx4xN1cxe6Vly4bptzQrjM/0O2MnyMSXBmbBoiIiIiokSVRfc59RhSV167y3x1+Jp6HKkBXzbH8+Nyv516LGkBt7ufG+Jptuy/px5PSsC2DxBVQBANgCAaAEE0AIJoAATRAAiiARBEAyCIBkAQDYAgGgBBNACCaAAE0QAIYqMDVo9YDIBVIxYToA3xNqBsV2sCvCM+r4+nwQtV7gG1CS9pJgIYGiKAoc1EAEP7OgMY2j0RwNAeLACG9nQGMLRXHABDe08EMP4M+PR2+ACwN+IxA0PDAzA0PABDwwMwNDwAQ8MDMDQ8AEPDuwNmu9oRftKfrfb/x8tYGWFRadDMy1oxL2tWhedeWK8Oz7m1o0o81+aiavEc29uqxlM3WFaPp2zxBU/YZA6ecMwBPOGgDXjCUS/whMOG4AnHXcEbAAieAAieAAieAAieAAieCMhfP4mA1SwAjdHDonsf5YOJiIiIiJrfuwLJIUY92L6AhgAAAABJRU5ErkJggg==">
+              <div class="step1" >
+                      <h2> go To The Link</h2>
+                     
+              </div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhElEQVR4nO3cwWrCQBSF4bxgp1po38UqpQqVQmgfRohx4xN1cxe6Vly4bptzQrjM/0O2MnyMSXBmbBoiIiIiokSVRfc59RhSV167y3x1+Jp6HKkBXzbH8+Nyv516LGkBt7ufG+Jptuy/px5PSsC2DxBVQBANgCAaAEE0AIJoAATRAAiiARBEAyCIBkAQDYAgGgBBNACCaAAE0QAIYqMDVo9YDIBVIxYToA3xNqBsV2sCvCM+r4+nwQtV7gG1CS9pJgIYGiKAoc1EAEP7OgMY2j0RwNAeLACG9nQGMLRXHABDe08EMP4M+PR2+ACwN+IxA0PDAzA0PABDwwMwNDwAQ8MDMDQ8AEPDuwNmu9oRftKfrfb/x8tYGWFRadDMy1oxL2tWhedeWK8Oz7m1o0o81+aiavEc29uqxlM3WFaPp2zxBU/YZA6ecMwBPOGgDXjCUS/whMOG4AnHXcEbAAieAAieAAieAAieAAieCMhfP4mA1SwAjdHDonsf5YOJiIiIiJrfuwLJIUY92L6AhgAAAABJRU5ErkJggg==">
+              <div class="step1">
+                <h2> Launch The Rocket</h2>
+              
+              </div>
+        </div>
+       
+        <h1 style="color:red;text-align: center; background-color: beige;" >Proeceed</h1>
+   
+        <div class="proceed">
+          <form action="quiz1" method="get">
+            <button ><img src="https://media.giphy.com/media/UX5ovY9QQ1FOpaKtc8/giphy.gif " class="arrow" type="submit"></button>
+          </form>
+        </div>
+      </div>
+        
+        <script src="./javascript/game2.js"></script>
+</body>
+</html>

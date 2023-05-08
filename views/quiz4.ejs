@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/quiz1.css">
+</head>
+<body>
+  <div class="navbar">
+       
+    <div class="name"><%=email%></div>
+    <div class="highest">Highest score  <%=score%></div>
+    <div class="current">Current Score 5</div>
+ 
+</div>
+    <form action ="/quiz4" method="post"  id="quiz1form">
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">The number displayed on blowing rocket was</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" value="1" id="a" class="answer" />
+              <label for="a" id="a_text">1</label>
+            </li>
+      
+            <li>
+              <input type="radio" name="answer" value="2" id="b" class="answer" />
+              <label for="b" id="b_text">2</label>
+            </li>
+      
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" value="3" />
+              <label for="c" id="c_text">3</label>
+            </li>
+      
+            <li>
+              <input type="radio" name="answer" id="d" class="answer" value="4" />
+              <label for="d" id="d_text">4</label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit" onclick=playMusic3() >Submit</button>
+      </div>
+    </form>
+      
+      
+    <script src="./javascript/quiz1.js"></script>
+      
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin:20px;
+   
+}
+
+body{
+    background-image: url("../assets/guess.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* opacity: 0.1; */
+}
+
+#start{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.main{
+    background-color: #00ffffad;
+}
+
+h1{
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.object{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    /*  */
+   
+   
+}
+input{
+    border: 2px solid black;
+}
+.hint{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+img{
+    width: 120px;
+    height: 150px;
+    
+}
+
+.item{
+    background-color:  #ff7ff2e3;
+    border-radius: 20px;
+}
+
+.ans{
+    display: flex;
+    justify-content: center;
+}
+
+.hint1{
+    background-color:red;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hint2{
+    background-color:  red;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.hint3{
+    background-color:  red;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sub{
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar{
+    display: flex;
+    background-color: azure;
+}
+
+
+
+.name .highest .current {
+    font-family: cursive;
+    font-weight: 700;   
+}

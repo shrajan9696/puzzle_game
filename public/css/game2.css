@@ -1,0 +1,142 @@
+body{
+    background-image: url("../assets/game2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* opacity: 0.1; */
+}
+
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  /* .cards-list{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+  } */
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+
+  .instructions{
+    display: flex;
+    justify-content: space-around;
+    color:red;
+    background-color: antiquewhite;
+  }
+
+  .step1{
+    display: flex;
+    /* border: 2px solid red; */
+    /* background-color: antiquewhite; */
+  }
+
+  .c3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: bisque;
+  }
+
+  .insta{
+    font-size: x-large;
+    color: blue;
+    text-shadow: aliceblue;
+  }
+
+  .arrow{
+    height: 69px;
+    width: 220px;
+  }
+
+  .proceed{
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  .navbar{
+
+  
+  display: flex;
+  background-color: aqua;
+  justify-content: space-evenly;
+  font-size: large;
+  font-weight: 600;
+  height: 40px;
+  align-items: center;
+}
+
+.ins{
+  background-color: azure;
+  text-align: center;
+  height: 51px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow{
+  cursor: pointer;
+}
+
+.start{
+  text-align: center;
+  background-color: aliceblue;
+}
