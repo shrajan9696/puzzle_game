@@ -134,20 +134,15 @@ app.post('/quiz1',function(req,res){
    
     let answer = (req.body.answer);
     if(answer === "Football"){
-        player.play('./public/audio/success.mp3', function(err){
-            if (err) console.log(err);
-            else  res.redirect('/quiz2');
-          })
+       
+             res.redirect('/quiz2');
+         
       
     }
     else{
-        player.play('./public/audio/failure.mp3', function(err){
-            if (err) console.log(err);
-            else {
-                console.log("redirected");
+     
                 res.redirect('/endGame?valid=' + 2);
-            }
-          })
+        
 
        
     }
@@ -157,19 +152,16 @@ app.post('/quiz2',function(req,res){
 
     let answer = (req.body.answer);
     if(answer === "red"){
-        player.play('./public/audio/success.mp3', function(err){
-            if (err) console.log(err);
-            else  res.redirect('/quiz3');
-          })
+       
+            res.redirect('/quiz3');
+          
     }
     else {
-        player.play('./public/audio/failure.mp3', function(err){
-            if (err) console.log(err);
-            else {
+      
                 // console.log("redirected");
                 res.redirect('/endGame?valid=' + 3);
-            }
-          })
+         
+         
            
         
     }
@@ -179,19 +171,13 @@ app.post('/quiz3',function(req,res){
 
     let answer = (req.body.answer);
     if(answer === "Virat"){
-        player.play('./public/audio/success.mp3', function(err){
-            if (err) console.log(err);
-            else  res.redirect('/quiz4');
-          })
+        res.redirect('/quiz4');
+         
     }
     else {
-        player.play('./public/audio/failure.mp3', function(err){
-            if (err) console.log(err);
-            else {
-                // console.log("redirected");
+       
                 res.redirect('/endGame?valid=' + 4);
-            }
-          })
+         
            
         
     }
@@ -201,9 +187,7 @@ app.post('/quiz4',function(req,res){
 
     let answer = (req.body.answer);
     if(answer === "4"){
-        player.play('./public/audio/success.mp3', function(err){
-            if (err) console.log(err);
-            else  {
+      
                 User.updateOne({email:user_email},{$set:{score:6}}).then((data)=>{
                     // console.log(user_email);
                     // console.log("updated");
@@ -213,16 +197,11 @@ app.post('/quiz4',function(req,res){
             
                 ).catch(err=>console.log(err));
             }
-          })
-    }
     else {
-        player.play('./public/audio/failure.mp3', function(err){
-            if (err) console.log(err);
-            else {
+      
                 console.log("redirected");
                 res.redirect('/endGame?valid=' + 5);
-            }
-          })
+           
            
         
     }
