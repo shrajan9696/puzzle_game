@@ -23,8 +23,19 @@ After passing level 1 you will proceed to next level where you will have to obse
 <li>restart feature: yes</li>
 <li>start agin: yes</li>
 <li>User data is stored: yes</li>
-<li>admin dashboard: yes</li>
+<li>admin dashboard: yes , where admin can login to the account and can access the data of all users registerd on the site</li>
 
+<h2>Tech Stack</h2>
+<li>Backend: NodeJS, Express.js</li>
+<li>Frontend: HTML, CSS, tailwind css, javascript, EJS</li>
+<li>Database: MongoDB </li>
+<h2>Direct paths</h2>
+<p>Login: https://puzzle-game-sw40.onrender.com/login</p>
+<p>Signup:  https://puzzle-game-sw40.onrender.com/signup</p>
+<p>Admin: https://puzzle-game-sw40.onrender.com/admin </p>
+
+
+![Screenshot (42)](https://github.com/shrajan9696/puzzle_game/assets/89202642/1e5e994f-7dc4-4815-9f51-9cac0e80cf4d)
 
 
 
