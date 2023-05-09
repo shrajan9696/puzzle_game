@@ -14,8 +14,8 @@
             <form action="/signup" class="form" id="form1" method="post">
                 <h2 class="form__title">Sign Up</h2>
            
-                <input type="email" placeholder="Email" class="input" name="email" />
-                <input type="password" placeholder="Password" class="input" name="password"/>
+                <input type="email" placeholder="Email" class="input" name="email" required />
+                <input type="password" placeholder="Password" class="input" name="password" required/>
                 <button class="btn" type="submit">Sign Up</button>
             </form>
         </div> 
@@ -25,13 +25,14 @@
         <div class="container__overlay">
             <div class="overlay">
                 <div class="overlay__panel overlay--left">
-                    <form action="\login" method="get">
+                    <form action="\login" method="get" style="margin-bottom: 10px;">
                     <button class="btn" id="signIn" type="submit">Sign In</button>
                 </form>
+                <form action="\admin" method="get">
+                    <button class="btn" type="submit">Admin Login</button>
+                </form>
                 </div>
-                <div class="overlay__panel overlay--right">
-                    <button class="btn" id="signUp">Sign Up</button>
-                </div>
+                
             </div>
         </div>
     </div>
