@@ -13,8 +13,16 @@ It is a basic puzzle game made for the elitmus assignement where user will face 
 https://puzzle-game-sw40.onrender.com/login
 
 <h2>How to play Game</h2>
-<p>there are totla of 6 puzzles , out of which first one is to guess the name based on few pictures shown you can also access the hints given below.
+<p>there are total of 6 puzzles , out of which first one is to guess the name based on few pictures shown you can also access the hints given below.
 After passing level 1 you will proceed to next level where you will have to observe the various images and have to follow the tasks as prescribed and then there will be a series of 4 questions based on the slide shown</p>
+
+<h2>Answers Of the quizes</h2>
+<p>In the first puzzle you have to combine first letter of each objects, such as i for icecream, n for nine , d for dog, i for instagram, a for apple then answer will be india,  for the next 4 quizes football for ronaldo, red color of the car, virat Kohli for instagram id, 4 on the dice are the answers respectively</p>
+ <h2> steps to set-up the quiz</h2>
+ <p>Fork the repository, go at the location of forked repo and then run command npm install and then run node app.js
+ then access signup page at localhost:3000/signup  </p>
+<h2>Dead ends and restart </h2>
+<p>On failing to solve any quiz out of 4 your game will be ended and you have to restart the game, sufficient no of hints are given to solve the quiz</p>
 
 <h2>CheckList of features</h2>
 <li>Login/Signup with email: yes</li>
